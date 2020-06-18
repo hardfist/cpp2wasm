@@ -48,5 +48,11 @@
       "externalConsole": false,
       "MIMode": "lldb"
     }
+  ],
+  "compounds": [
+    {
+      "name": "node_c++",
+      "configurations": ["lldb:node","node:attach"]
+    }
   ]
 }
