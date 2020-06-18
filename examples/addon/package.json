@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:fact": "clang -g -dynamiclib -undefined suppress -flat_namespace factorial.c -o libfactorial.dylib",
     "start": "node index.js",
     "build:dev": "node-gyp -j 16 build --debug",
     "build": "node-gyp -j 16 build",
@@ -17,6 +18,7 @@
   "gypfile": true,
   "dependencies": {
     "bindings": "~1.2.1",
+    "ffi-napi": "^3.0.1",
     "nan": "^2.0.0"
   }
 }

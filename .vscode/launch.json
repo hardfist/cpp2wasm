@@ -19,7 +19,7 @@
       "name": "lldb:node",
       "program": "/Users/yj/.nvm/versions/node/v12.16.1/bin/node",
       "args": ["--inspect-brk","examples/addon/index.js"],
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
     },
     {
       "type": "lldb",

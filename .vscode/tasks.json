@@ -19,6 +19,24 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"type": "npm",
+			"script": "build:fact",
+			"path": "examples/addon/",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build:fact - examples/addon",
+			"detail": "clang -g -dynamiclib -undefined suppress -flat_namespace factorial.c -o libfactorial.dylib"
+		},
+		{
+			"type": "npm",
+			"script": "build:dev",
+			"path": "examples/addon/",
+			"group": "rebuild",
+			"problemMatcher": [],
+			"label": "npm: build:dev - examples/addon",
+			"detail": "node-gyp -j 16 build --debug"
 		}
 	]
 }
